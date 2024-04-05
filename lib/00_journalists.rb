@@ -3,3 +3,24 @@ $handle_array = ["@jcunniet","@PaulLampon","@Aziliz31","@ssoumier","@marionsouze
 
 
 $prenoms_thp = ["Manon", "Elias", "Valentin", "Antoine"]
+
+def nb_of_handle(une_array)
+  puts une_array.count
+  return une_array.count
+  end 
+  
+  nb_of_handle($handle_array)
+
+
+
+  def find_capitalize_letters(array)
+    handle_scanned = 0
+    array.each do |handle|
+        if handle =~ /@[A-Z]/
+        handle_scanned += 1
+      end
+    end
+    puts handle_scanned
+  end
+  
+  find_capitalize_letters(handle_array)
